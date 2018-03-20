@@ -9,7 +9,7 @@ module.exports = {
     // webpack的差异化配置
     webpack: {
         entry: {
-            app: path.join(__dirname, '../front/index.js'), // 入口
+            app: path.join(__dirname, '../src/main.js'), // 入口
             vendor: ['vue', 'vue-router'] // 拆分框架代码
         },
         // 是否对样式启用px到rem的转换,配合config/utils/responsive-design.js适配移动端开发， 默认不开启

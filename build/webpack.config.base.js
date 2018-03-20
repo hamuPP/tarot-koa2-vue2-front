@@ -46,7 +46,7 @@ module.exports = function (env) {
                 '@config': resolve('config'),
                 '@build': resolve('build'),
                 // '@': resolve('client'),//别人的原来写法
-                '@': resolve('front'),
+                '@': resolve('src'),
             }
         },
         module: {
@@ -54,8 +54,16 @@ module.exports = function (env) {
                 {
                     test: /\.vue$/,
                     // include: [resolve('client')],
-                    include: [resolve('front')],
+                    include: [resolve('src')],
                     use: [vueLoaderConfig, 'eslint-loader'],
+                },
+                {
+                    test: /\.less$/,
+                    use: [
+                        { loader: "style-loader" },
+                        { loader: "css-loader" },
+                        { loader: "less-loader" }
+                    ]
                 },
                 {
                     test: /\.js$/,
