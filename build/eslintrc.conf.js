@@ -108,8 +108,6 @@ module.exports = {
     'no-trailing-spaces': 2,
     // 禁用不必要的嵌套块
     'no-lone-blocks': 2,
-    // 强制在 JSX 属性中一致地使用双引号或单引号
-    'jsx-quotes': 0,
     // 函数定义时括号前面要不要有空格 这里忽略
     'space-before-function-paren': [0, `always`],
     //对象字面量项尾不能有逗号 这里忽略
