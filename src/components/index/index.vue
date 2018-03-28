@@ -17,7 +17,9 @@
 
         methods: {},
 
-        created() {},
+        created() {
+            debugger
+        },
 
         mounted() {}
     }
