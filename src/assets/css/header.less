@@ -1,0 +1,69 @@
+/**
+* headers styles
+* Created by ty 2018、04月02日10:23:24
+*/
+
+//引入公共变量
+@import 'CONST.less';
+
+.main-header{
+    &>div{
+        height: 100%;
+    }
+}
+.wrapper-header-nav-logo{
+    height: 64px;
+    overflow: hidden;
+    float: left;
+}
+.logo-img{
+    height: 64px;
+}
+.wrapper-header-nav-search{
+    overflow: hidden;
+    float: right;
+    //height: 100%;
+    width: 200px;
+    margin:20px 0 0;
+    //border:1px solid red;
+}
+
+.wrapper-header-nav-list{
+    float: right;
+    height: 100%;
+    margin:0 0 0 20px;
+
+    //去掉iview ui自带的一条下边缘线
+    .ivu-menu-horizontal.ivu-menu-light:after{
+        height:0;
+    }
+
+    .ivu-menu {
+        background-color: transparent;
+        .ivu-menu-item{
+            //border:none;
+            color: @color-blue-primary
+        }
+        .ivu-menu-item-active{
+            //border:none;
+            //background-color: @color-red-primary;
+        }
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .wrapper-header-nav-list{
+        display: none;
+    }
+}
+
+.header-sider-toggle{
+    display: none;
+    float: right;
+}
+@media screen and (max-width:767px){
+    .header-sider-toggle{
+        display: block;
+    }
+}

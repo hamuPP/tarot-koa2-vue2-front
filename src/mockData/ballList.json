@@ -1,0 +1,20 @@
+{
+	"data": [
+		{
+			"title": "财运",
+			"id": "money",
+			"className": ""
+		},
+		{
+			"title": "爱情",
+			"id": "love",
+			"className": ""
+		},
+		{
+			"title": "没想好,随便看看",
+			"id": "random",
+			"className": "active"
+		}
+	]
+}
+

@@ -26,7 +26,7 @@ function getProxyConfig () {
     return appConfig.proxy
   }
   // 生产环境读取
-  const serverConfig = require(path.join(process.cwd(), 'server.config.js'))
+  const serverConfig = require(path.join(process.cwd(), 'conf/server.config.js'))
   return serverConfig.proxy
 }
 
@@ -55,7 +55,8 @@ module.exports = function () {
       }
     }
     if (!proxyTarget) {
-      logger.info('Proxy not found, skipped')
+      logger.info('Proxy not found, skipped');
+      // console.log(Promise.resolve());
       return Promise.resolve()
     }
     logger.info(`Will be Agent to '${proxyTarget + ctx.url}'`)

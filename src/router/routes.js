@@ -18,6 +18,11 @@ const routes = [
         component: Index,
         meta: {title: '首页CC'}
     },
+    {
+        path: '/index',
+        component: Index,
+        meta: {title: '首页CC'}
+    },
 ];
 
 export default routes

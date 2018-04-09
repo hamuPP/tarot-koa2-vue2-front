@@ -1,0 +1,133 @@
+/**
+* index page(homepage) styles
+* Created by ty 2018/04月03日10:23:24
+*/
+//引入公共变量
+@import 'CONST.less';
+
+.homepage {
+    .big-background-image {
+        //padding-right:;
+        position: relative;
+        height: 400px;
+        background: url(../../assets/images/bg-main.jpg);
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(43, 43, 43, .4);
+        }
+    }
+    .divine-introduction {
+        .divine-introduction-title {
+            color: @color-blue-primary;
+            //color: @color-green-primary;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.right-title-info{
+    margin: -22px 200px 0 0;
+    float:right;
+    color: #a7a7a7;
+    & > span{
+        display: inline-block;
+        line-height: 23px;
+    }
+}
+@media (max-width: 490px){
+
+    .right-title-info {
+        margin: -12px;
+    }
+}
+
+@media (max-width: 991px){
+
+    .right-title-info {
+        margin-right:100px;
+    }
+}
+@media (max-width: 714px){
+
+    .right-title-info {
+        margin-right:40px;
+    }
+}
+@media (max-width: 714px){
+
+    .right-title-info {
+        margin-right:0;
+    }
+}
+
+.content-line-box {
+    text-align: center;
+    padding:1px;
+}
+
+/*ball nav start*/
+.ball-nav {
+    border:1px solid green;
+    display: block;
+    margin:3px auto;
+    text-align: center;
+    min-height:120px;
+    .item{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        padding-top:25px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        vertical-align: middle;
+        border:1px solid @main-border-color-lightpur;
+
+        &:hover{
+            text-decoration: none;
+            font-weight: normal;
+            background-color: @hover-bgcolor-lightpur;
+        }
+        &:visited{
+            text-decoration: none;
+        }
+        &:focus{
+            text-decoration: none;
+            outline: none;
+        }
+
+        &.active{
+            padding:46px 20px 0;
+            color: #efecb9;
+            font-size: 14px;
+            width: 120px;
+            height: 120px;
+            border:none;
+            -webkit-transition: 500ms;
+            -moz-transition: 500ms;
+            -ms-transition: 500ms;
+            -o-transition: 500ms;
+            transition: 500ms;
+
+            -webkit-transform:rotate(360deg);
+            -moz-transform: scale(1.1);
+            -ms-transform:scale(1.1);
+            -o-transform: scale(1.1);
+            transform: rotate(360deg);
+            background: url(../images/purple-star.png) no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+/*ball nav end*/

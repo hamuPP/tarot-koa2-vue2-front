@@ -1,3 +1,6 @@
+//引入公共变量
+@import 'CONST.less';
+
 //重设样式 --start--
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
     margin: 0;
@@ -9,7 +12,8 @@ html{
 }
 body {
     height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans","Microsoft YaHei","weiruanyahei",Arial,sans-serif;
     font-size:1.5rem;
     line-height: 1.428571429;
     color: #333;
@@ -24,16 +28,32 @@ body {
 
 //本项目的公共样式 --start--
 .body-wrapper{
-    background: purple;
+    background: @color-purple-primary;
 }
 
 .header{
     height: 3rem;
-    background: green;
+    //background: green;
 }
 
 .footer{
     height: 3rem;
-    background: mediumpurple;
+    //background: #76458b;
+}
+.main-wrapper{
+    height: 100%;
+}
+.main-header{
+    height: 64px;
+    line-height:64px;
+    //margin: 0 auto;
+    background: @color-purple-primary;
+    color: @color-green-primary;
+    border-bottom:1px solid @color-purple-light;
+}
+//@media screen and (max-width:)
+.main-content{
+    //height: 300px;
+    background: @color-purple-primary;
 }
 //本项目的公共样式 --end--

@@ -6,15 +6,17 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './router/routes.js';
 import Utils from './utils';
+import store from './vuex';
 import iView from 'iview';
 
 import 'iview/dist/styles/iview.css';
 
 // 引入本项目的公共样式
 import '@/assets/css/common.less'
+import '@/assets/css/main.less'
 
 // vue config配置文件
-import './config'
+// import './config'
 
 import App from './app.vue'
 
@@ -41,6 +43,6 @@ router.afterEach((route) => {
 new Vue({
   el: '#app',
   router,
-  // store,
+  store,
   render: h => h(App)
 });

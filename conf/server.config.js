@@ -8,5 +8,6 @@ module.exports = {
   proxy: {
     '/api/test': constants.loginTargets[common],
     '/v3/assistant': 'http://restapi.amap.com/v3/',
+      // '/test':'../test'
   },
 };
